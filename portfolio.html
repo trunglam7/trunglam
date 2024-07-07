@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung Lam</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em 1em;
+            text-align: center;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin: 1em;
+            max-width: 1000px;
+        }
+        .project-card img{
+            width: 100%;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+        .project-card a {
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #home img{
+            width: 50%;
+            height: 50%;
+            max-width: 250px;
+            border-radius: 50%;
+        }
+        #skills ul{
+            list-style: none;
+            padding: 0;
+        }
+        #projects{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <h1>Trung Lam - Software Engineer</h1>
+    </header>
+    <section id="home">
+        <img src="./images/1558758179169.jpeg">
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! Welcome to my site. My name is Trung Lam. I am an experienced software engineer with experience in both front-end and back-end web technologies.
+            Feel free to check out some of my projects ranging from web applications, web games, and experiments.
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <a href="https://genai-hub.vercel.app" target="_blank"><h3>GenAI Hub</h3></a>
+            <img src="./images/genaihub_img.png" alt="Project Screenshot">
+            <p>
+                This web application leverages <b>Next.js</b> for its front-end, integrating various AI-powered applications powered by Google's Gemini Large Language Model.
+            </p>
+            <a href="https://github.com/trunglam7/genai_hub" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+            <a href="https://genetic-algorithm-nn-search.vercel.app" target="_blank"><h3>Genetic Algorithm X Neural Network Simulation</h3></a>
+            <img src="./images/neuroevolution_img.png" alt="Project Screenshot">
+            <p>
+                This experimental project utilizes <b>Next.js</b> for front-end development and <b>p5.js</b> for visualization. It showcases an evolutionary algorithm, specifically a Genetic Algorithm, designed to evolve neural networks for tasks such as identifying a red target. Users can interact with different environments by simply reloading the webpage.
+            </p>
+            <a href="https://github.com/trunglam7/genetic-algorithm-nn-search" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+            <a href="https://puptop.vercel.app" target="_blank"><h3>PupTop</h3></a>
+            <img src="./images/puptop_img.png" alt="Project Screenshot">
+            <p>
+                Developed using <b>Next.js</b> for the front-end, <b>Convex</b> for back-end functionality, and <b>Clerk</b> for secure authentication, this application offers a Tinder-like experience for dog lovers. Users can swipe left or right to match with dogs and manage their own pet profiles effortlessly.
+            </p>
+            <a href="https://github.com/trunglam7/puptopv2" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+            <a href="https://dog-shelter-map.vercel.app" target="_blank"><h3>Dog Shelter Visualization Map</h3></a>
+            <img src="./images/dogvisualization_img.png" alt="Project Screenshot">
+            <p>
+                Built with <b>Next.js</b> for the front-end and enhanced with <b>d3.js</b> for data visualization, this interactive map provides comprehensive insights into dog shelter statistics from 2019 to 2022. It visualizes data on the number of dogs taken in per state annually, their sources (such as strays or relinquished by owners), and outcomes. This tool enables detailed exploration of shelter data to support informed decision-making and understanding of canine welfare trends across the United States.
+            </p>
+            <a href="https://github.com/trunglam7/dog-shelter-map" target="_blank">GitHub Repo</a>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Programming Languages and Frameworks</h3>
+        <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>FastAPI</li>
+            <li>Flask</li>
+        </ul>
+        
+        <h3>Tools and Platforms</h3>
+        <ul>
+            <li>AWS (Amazon Web Services)</li>
+            <li>Firebase (Google)</li>
+            <li>Convex</li>
+        </ul>
+        
+        <h3>AI and Machine Learning</h3>
+        <ul>
+            <li>Large Language Models</li>
+            <li>RAG (Retrieval Augment Generation)</li>
+            <li>Prompt Engineering</li>
+        </ul>
+        
+    </section>
+    <footer>
+        <ul>    
+            <li><a href="https://www.linkedin.com/in/trung-lam-8190a0177/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/trunglam7" target="_blank">GitHub</a></li>
+            <!-- Add more social links as needed -->
+        </ul>
+        <p>&copy; 2024 Trung Lam</p>
+    </footer>
+</body>
+</html>
