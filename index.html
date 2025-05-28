@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trung Lam</title>
     <style>
         html {
@@ -36,18 +36,20 @@
             padding: 2em 1em;
             text-align: center;
         }
-        .project-card {
+        .project-card, .publication-card {
             border: 1px solid #ddd;
             padding: 1em;
-            margin: 1em;
+            margin: 1em auto;
             max-width: 1000px;
+            text-align: left;
         }
-        .project-card img{
+        .project-card img {
             width: 100%;
             box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
         }
-        .project-card a {
+        .project-card a, .publication-card a {
             color: inherit;
+            text-decoration: none;
         }
         footer {
             background-color: #333;
@@ -67,17 +69,17 @@
             color: white;
             text-decoration: none;
         }
-        #home img{
+        #home img {
             width: 50%;
             height: 50%;
             max-width: 250px;
             border-radius: 50%;
         }
-        #skills ul{
+        #skills ul {
             list-style: none;
             padding: 0;
         }
-        #projects{
+        #projects, #publications {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -92,13 +94,14 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
         </nav>
         <h1>Trung Lam - Software Engineer</h1>
     </header>
     <section id="home">
-        <img src="./images/1558758179169.jpeg">
+        <img src="./images/1558758179169.jpeg" />
     </section>
     <section id="about">
         <h2>About Me</h2>
@@ -110,7 +113,7 @@
         <h2>Projects</h2>
         <div class="project-card">
             <a href="https://genai-hub.vercel.app" target="_blank"><h3>GenAI Hub</h3></a>
-            <img src="./images/genaihub_img.png" alt="Project Screenshot">
+            <img src="./images/genaihub_img.png" alt="Project Screenshot" />
             <p>
                 This web application leverages <b>Next.js</b> for its front-end, integrating various AI-powered applications powered by Google's Gemini Large Language Model.
             </p>
@@ -118,7 +121,7 @@
         </div>
         <div class="project-card">
             <a href="https://genetic-algorithm-nn-search.vercel.app" target="_blank"><h3>Genetic Algorithm X Neural Network Simulation</h3></a>
-            <img src="./images/neuroevolution_img.png" alt="Project Screenshot">
+            <img src="./images/neuroevolution_img.png" alt="Project Screenshot" />
             <p>
                 This experimental project utilizes <b>Next.js</b> for front-end development and <b>p5.js</b> for visualization. It showcases an evolutionary algorithm, specifically a Genetic Algorithm, designed to evolve neural networks for tasks such as identifying a red target. Users can interact with different environments by simply reloading the webpage.
             </p>
@@ -126,7 +129,7 @@
         </div>
         <div class="project-card">
             <a href="https://puptop.vercel.app" target="_blank"><h3>PupTop</h3></a>
-            <img src="./images/puptop_img.png" alt="Project Screenshot">
+            <img src="./images/puptop_img.png" alt="Project Screenshot" />
             <p>
                 Developed using <b>Next.js</b> for the front-end, <b>Convex</b> for back-end functionality, and <b>Clerk</b> for secure authentication, this application offers a Tinder-like experience for dog lovers. Users can swipe left or right to match with dogs and manage their own pet profiles effortlessly.
             </p>
@@ -134,13 +137,26 @@
         </div>
         <div class="project-card">
             <a href="https://dog-shelter-map.vercel.app" target="_blank"><h3>Dog Shelter Visualization Map</h3></a>
-            <img src="./images/dogvisualization_img.png" alt="Project Screenshot">
+            <img src="./images/dogvisualization_img.png" alt="Project Screenshot" />
             <p>
                 Built with <b>Next.js</b> for the front-end and enhanced with <b>d3.js</b> for data visualization, this interactive map provides comprehensive insights into dog shelter statistics from 2019 to 2022. It visualizes data on the number of dogs taken in per state annually, their sources (such as strays or relinquished by owners), and outcomes. This tool enables detailed exploration of shelter data to support informed decision-making and understanding of canine welfare trends across the United States.
             </p>
             <a href="https://github.com/trunglam7/dog-shelter-map" target="_blank">GitHub Repo</a>
         </div>
     </section>
+    
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-card">
+            <a href="./BIAS18_report_DESIGNED.Oct22.pdf" target="_blank" download>
+                <h3>Results from NIST’s GenAI Text-to-Text (T2T) Discriminator Challenge</h3>
+            </a>
+            <p>
+                Generative AI (GenAI) advances bring both benefits and risks to the housing sector, such as potential discrimination, misleading listings, and restricted access. The National Fair Housing Alliance (NFHA) joined the NIST GenAI Text-to-Text Discriminator Challenge to help address these issues. Our results show that models like SVM and XGBoost can partially distinguish AI-generated from human text, but tracing AI content origins remains difficult, raising concerns about accountability. These findings highlight the need for improved regulation, transparency, detection tools, and awareness in high-risk housing applications. NFHA continues to research and promote responsible GenAI use in housing.
+            </p>
+        </div>
+    </section>
+
     <section id="skills">
         <h2>Skills</h2>
         <h3>Programming Languages and Frameworks</h3>
