@@ -85,6 +85,36 @@
             align-items: center;
             justify-content: center;
         }
+
+        /* *** PUBLICATION CARD STYLES FOR HORIZONTAL LAYOUT *** */
+        .publication-card {
+            /* Enable Flexbox for horizontal layout */
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5em; /* Space between image and text */
+        }
+
+        /* Style the image wrapper link to be 25% */
+        .publication-card > a:first-child {
+            width: 25%;
+            flex-shrink: 0;
+            text-decoration: none; /* Removes underline from image only */
+        }
+
+        /* Style the image inside the 25% wrapper */
+        .publication-card img {
+            width: 100%; /* Image fills its 25% container */
+            max-height: 250px;
+            object-fit: contain;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style the new content wrapper to be 75% */
+        .publication-content {
+            width: 75%;
+            flex-grow: 1;
+        }
+        /* *** END STYLES *** */
     </style>
 </head>
 <body>
@@ -106,7 +136,7 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            AI Engineer specializing in the full lifecycle of intelligent applications, from advanced model development to scalable web deployment. I hold a Master's in Computer Science from UC Riverside and specialize in creating responsible, user-facing AI solutions. My expertise spans integrating modern LLMs (Google Gemini), implementing advanced algorithms (Genetic Algorithms, Neuroevolution), and building full-stack applications using Next.js, Convex, and data visualization tools like D3.js. My research on generative AI safety, aligned with the NIST Generative AI Challenge, underscores my commitment to high-impact, ethical AI development.          
+            AI Engineer specializing in the full lifecycle of intelligent applications, from advanced model development to scalable web deployment. I hold a Master's in Computer Science from UC Riverside and specialize in creating responsible, user-facing AI solutions. My expertise spans integrating modern LLMs (Google Gemini), implementing advanced algorithms (Genetic Algorithms, Neuroevolution), and building full-stack applications using Next.js, Convex, and data visualization tools like D3.js. My research on generative AI safety, aligned with the NIST Generative AI Challenge, underscores my commitment to high-impact, ethical AI development.
         </p>
     </section>
     <section id="projects">
@@ -144,24 +174,37 @@
             <a href="https://github.com/trunglam7/dog-shelter-map" target="_blank">GitHub Repo</a>
         </div>
     </section>
-    
+
     <section id="publications">
         <h2>Publications</h2>
         <div class="publication-card">
             <a href="./EAAMO-PJMF-Poster.pdf" target="_blank">
-                <h3>Assessing Sources of Bias: A Systemic Review of Large Language Model Bias in a Real Estate Context</h3>
+                <img src="https://placehold.co/200x250/EAEAEA/333333?text=Report+Visual" alt="Report visual for Assessing Sources of Bias LLM" />
             </a>
-            <p>
-                Assessing Sources of Bias: A Systemic Review of Large Language Model Bias in a Real Estate Context, covers preliminary results from a foundational research effort examining how large language models (LLMs) behave within real estate contexts. The poster focuses on phase 1 of the multi-stage work, examining advertising bias in model generated property descriptions across seven open and closed source LLMs. This work also introduces a generalizable decomposition framework to help identify and isolate social and contextual factors that may contribute to LLM bias when these systems interact with real-world deployment.
-            </p>
+
+            <div class="publication-content">
+                <a href="./EAAMO-PJMF-Poster.pdf" target="_blank">
+                    <h3>Assessing Sources of Bias: A Systemic Review of Large Language Model Bias in a Real Estate Context</h3>
+                </a>
+                <p>
+                    Assessing Sources of Bias: A Systemic Review of Large Language Model Bias in a Real Estate Context, covers preliminary results from a foundational research effort examining how large language models (LLMs) behave within real estate contexts. The poster focuses on phase 1 of the multi-stage work, examining advertising bias in model generated property descriptions across seven open and closed source LLMs. This work also introduces a generalizable decomposition framework to help identify and isolate social and contextual factors that may contribute to LLM bias when these systems interact with real-world deployment.
+                </p>
+            </div>
         </div>
+
         <div class="publication-card">
             <a href="./BIAS18_report_DESIGNED.Oct22.pdf" target="_blank">
-                <h3>Results from NIST’s GenAI Text-to-Text (T2T) Discriminator Challenge</h3>
+                <img src="https://placehold.co/200x250/EAEAEA/333333?text=Report+Visual" alt="Report visual for NIST GenAI Text-to-Text Discriminator Challenge" />
             </a>
-            <p>
-                Generative AI (GenAI) advances bring both benefits and risks to the housing sector, such as potential discrimination, misleading listings, and restricted access. The National Fair Housing Alliance (NFHA) joined the NIST GenAI Text-to-Text Discriminator Challenge to help address these issues. Our results show that models like SVM and XGBoost can partially distinguish AI-generated from human text, but tracing AI content origins remains difficult, raising concerns about accountability. These findings highlight the need for improved regulation, transparency, detection tools, and awareness in high-risk housing applications. NFHA continues to research and promote responsible GenAI use in housing.
-            </p>
+
+            <div class="publication-content">
+                <a href="./BIAS18_report_DESIGNED.Oct22.pdf" target="_blank">
+                    <h3>Results from NIST’s GenAI Text-to-Text (T2T) Discriminator Challenge</h3>
+                </a>
+                <p>
+                    Generative AI (GenAI) advances bring both benefits and risks to the housing sector, such as potential discrimination, misleading listings, and restricted access. The National Fair Housing Alliance (NFHA) joined the NIST GenAI Text-to-Text Discriminator Challenge to help address these issues. Our results show that models like SVM and XGBoost can partially distinguish AI-generated from human text, but tracing AI content origins remains difficult, raising concerns about accountability. These findings highlight the need for improved regulation, transparency, detection tools, and awareness in high-risk housing applications. NFHA continues to research and promote responsible GenAI use in housing.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -178,14 +221,14 @@
             <li>FastAPI</li>
             <li>Flask</li>
         </ul>
-        
+
         <h3>Tools and Platforms</h3>
         <ul>
             <li>AWS (Amazon Web Services)</li>
             <li>Firebase (Google)</li>
             <li>Convex</li>
-        </ul>
-        
+            <li>n8n (Low-code/No-code Automation)</li> </ul>
+
         <h3>AI and Machine Learning</h3>
         <ul>
             <li>Large Language Models</li>
@@ -194,10 +237,10 @@
             <li>Prompt Engineering</li>
             <li>Feature Engineering</li>
         </ul>
-        
+
     </section>
     <footer>
-        <ul>    
+        <ul>
             <li><a href="https://www.linkedin.com/in/trung-lam-8190a0177/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/trunglam7" target="_blank">GitHub</a></li>
         </ul>
