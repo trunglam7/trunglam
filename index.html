@@ -114,6 +114,25 @@
             width: 75%;
             flex-grow: 1;
         }
+
+        @media screen and (max-width: 800px) {
+            .publication-card {
+                /* Change layout to vertical stack */
+                flex-direction: column;
+                gap: 0.5em; /* Reduce gap when stacked */
+            }
+        
+            /* Image link wrapper becomes 100% width */
+            .publication-card > a:first-child {
+                width: 100%;
+                margin-bottom: 0.5em; /* Space below the image */
+            }
+            
+            /* Text content wrapper becomes 100% width */
+            .publication-content {
+                width: 100%;
+            }
+        }
         /* *** END STYLES *** */
     </style>
 </head>
