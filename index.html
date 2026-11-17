@@ -39,12 +39,18 @@
         .project-card, .publication-card {
             border: 1px solid #ddd;
             padding: 1em;
-            margin: 1em auto;
-            max-width: 1000px;
+            margin: 0;
+            width: 100%;
+            max-width: none;
+            min-width: 0;
+            box-sizing: border-box;
             text-align: left;
         }
         .project-card img {
+            display: block;
             width: 100%;
+            height: 220px;
+            object-fit: contain;
             box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
         }
         .project-card a, .publication-card a {
@@ -183,6 +189,22 @@
                 Built with <b>Next.js</b> for the front-end and enhanced with <b>d3.js</b> for data visualization, this interactive map provides comprehensive insights into dog shelter statistics from 2019 to 2022. It visualizes data on the number of dogs taken in per state annually, their sources (such as strays or relinquished by owners), and outcomes. This tool enables detailed exploration of shelter data to support informed decision-making and understanding of canine welfare trends across the United States.
             </p>
             <a href="https://github.com/trunglam7/dog-shelter-map" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+            <h3>KOJI Foundation</h3>
+            <img src="./images/koji_foundation_img.png" alt="KOJI Foundation project screenshot (image coming soon)" />
+            <p>
+                Founded as a dog-rescue awareness initiative, KOJI Foundation focuses on helping bring attention to dogs in need and supporting a future sanctuary-first rescue model. The project reflects a long-term commitment to animal welfare, with an emphasis on prioritizing dogs facing urgent outcomes and building a foundation for more direct rescue and sanctuary work.
+            </p>
+            <a href="https://scout.kojifoundation.org" target="_blank">Explore SCOUT</a>
+        </div>
+        <div class="project-card">
+            <a href="https://scout.kojifoundation.org" target="_blank"><h3>SCOUT — Shelter Companion &amp; Outreach Utility Tool</h3></a>
+            <img src="./images/scout_img.png" alt="SCOUT project screenshot (image coming soon)" />
+            <p>
+                SCOUT is a shelter-discovery platform developed under KOJI Foundation to help surface dogs in need of rescue. It currently focuses on Riverside County, California, bringing together listings from regional shelter sources and highlighting dogs with urgent or at-risk status. The platform uses web scraping and natural language processing to collect and organize shelter information across feeds with differing formats, making it easier to identify dogs who may otherwise be overlooked.
+            </p>
+            <a href="https://scout.kojifoundation.org" target="_blank">Visit SCOUT</a>
         </div>
     </section>
 
